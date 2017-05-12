@@ -23,6 +23,16 @@
 		1F0D164A1EC621D400EAFB58 /* LSProductCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F0D16491EC621D400EAFB58 /* LSProductCell.m */; };
 		660808B12BB789FCE252BFE6 /* libPods-ShopFetchTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 12BAD87B6801D51FC37F62FC /* libPods-ShopFetchTests.a */; };
 		E243019A3D4F38AF44C32E76 /* libPods-ShopFetchUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CF0B92E6F3A5B7F5FA652B1E /* libPods-ShopFetchUITests.a */; };
+		FA3AD9D61EC62803009E80B7 /* apple_iphone_7_plus_128gb_silver.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FA3AD9CC1EC62802009E80B7 /* apple_iphone_7_plus_128gb_silver.jpg */; };
+		FA3AD9D71EC62803009E80B7 /* huawei_p10.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FA3AD9CD1EC62802009E80B7 /* huawei_p10.jpg */; };
+		FA3AD9D81EC62803009E80B7 /* leeco_le_max_2_4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FA3AD9CE1EC62803009E80B7 /* leeco_le_max_2_4.jpg */; };
+		FA3AD9D91EC62803009E80B7 /* lenovo_pa4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FA3AD9CF1EC62803009E80B7 /* lenovo_pa4.jpg */; };
+		FA3AD9DA1EC62803009E80B7 /* motorola_sm.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FA3AD9D01EC62803009E80B7 /* motorola_sm.jpg */; };
+		FA3AD9DB1EC62803009E80B7 /* motorola_sm4377ad1k7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FA3AD9D11EC62803009E80B7 /* motorola_sm4377ad1k7.jpg */; };
+		FA3AD9DC1EC62803009E80B7 /* nous_ns_5006_rose_gold.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FA3AD9D21EC62803009E80B7 /* nous_ns_5006_rose_gold.jpg */; };
+		FA3AD9DD1EC62803009E80B7 /* samsung_galaxy_s7_edge_32gb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FA3AD9D31EC62803009E80B7 /* samsung_galaxy_s7_edge_32gb.jpg */; };
+		FA3AD9DE1EC62803009E80B7 /* sony_xperia_xa_dual_black.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FA3AD9D41EC62803009E80B7 /* sony_xperia_xa_dual_black.jpg */; };
+		FA3AD9DF1EC62803009E80B7 /* zte_axon7_grey_57.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FA3AD9D51EC62803009E80B7 /* zte_axon7_grey_57.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +89,16 @@
 		941EA02389E4C8B5932B74E9 /* Pods-ShopFetchUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShopFetchUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ShopFetchUITests/Pods-ShopFetchUITests.release.xcconfig"; sourceTree = "<group>"; };
 		CF0B92E6F3A5B7F5FA652B1E /* libPods-ShopFetchUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ShopFetchUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2F20C16C298E3883BE4513E /* Pods-ShopFetchUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShopFetchUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ShopFetchUITests/Pods-ShopFetchUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		FA3AD9CC1EC62802009E80B7 /* apple_iphone_7_plus_128gb_silver.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = apple_iphone_7_plus_128gb_silver.jpg; sourceTree = "<group>"; };
+		FA3AD9CD1EC62802009E80B7 /* huawei_p10.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = huawei_p10.jpg; sourceTree = "<group>"; };
+		FA3AD9CE1EC62803009E80B7 /* leeco_le_max_2_4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = leeco_le_max_2_4.jpg; sourceTree = "<group>"; };
+		FA3AD9CF1EC62803009E80B7 /* lenovo_pa4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lenovo_pa4.jpg; sourceTree = "<group>"; };
+		FA3AD9D01EC62803009E80B7 /* motorola_sm.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = motorola_sm.jpg; sourceTree = "<group>"; };
+		FA3AD9D11EC62803009E80B7 /* motorola_sm4377ad1k7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = motorola_sm4377ad1k7.jpg; sourceTree = "<group>"; };
+		FA3AD9D21EC62803009E80B7 /* nous_ns_5006_rose_gold.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nous_ns_5006_rose_gold.jpg; sourceTree = "<group>"; };
+		FA3AD9D31EC62803009E80B7 /* samsung_galaxy_s7_edge_32gb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = samsung_galaxy_s7_edge_32gb.jpg; sourceTree = "<group>"; };
+		FA3AD9D41EC62803009E80B7 /* sony_xperia_xa_dual_black.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sony_xperia_xa_dual_black.jpg; sourceTree = "<group>"; };
+		FA3AD9D51EC62803009E80B7 /* zte_axon7_grey_57.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = zte_axon7_grey_57.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +163,16 @@
 		1F0D16061EC61DAB00EAFB58 /* ShopFetch */ = {
 			isa = PBXGroup;
 			children = (
+				FA3AD9CC1EC62802009E80B7 /* apple_iphone_7_plus_128gb_silver.jpg */,
+				FA3AD9CD1EC62802009E80B7 /* huawei_p10.jpg */,
+				FA3AD9CE1EC62803009E80B7 /* leeco_le_max_2_4.jpg */,
+				FA3AD9CF1EC62803009E80B7 /* lenovo_pa4.jpg */,
+				FA3AD9D01EC62803009E80B7 /* motorola_sm.jpg */,
+				FA3AD9D11EC62803009E80B7 /* motorola_sm4377ad1k7.jpg */,
+				FA3AD9D21EC62803009E80B7 /* nous_ns_5006_rose_gold.jpg */,
+				FA3AD9D31EC62803009E80B7 /* samsung_galaxy_s7_edge_32gb.jpg */,
+				FA3AD9D41EC62803009E80B7 /* sony_xperia_xa_dual_black.jpg */,
+				FA3AD9D51EC62803009E80B7 /* zte_axon7_grey_57.jpg */,
 				1F0D16471EC6219C00EAFB58 /* CustomViews */,
 				1F0D163B1EC61DE000EAFB58 /* Modules */,
 				1F0D163A1EC61DC700EAFB58 /* Models */,
@@ -369,9 +399,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA3AD9D81EC62803009E80B7 /* leeco_le_max_2_4.jpg in Resources */,
 				1F0D16171EC61DAB00EAFB58 /* LaunchScreen.storyboard in Resources */,
+				FA3AD9DD1EC62803009E80B7 /* samsung_galaxy_s7_edge_32gb.jpg in Resources */,
+				FA3AD9DA1EC62803009E80B7 /* motorola_sm.jpg in Resources */,
 				1F0D16141EC61DAB00EAFB58 /* Assets.xcassets in Resources */,
 				1F0D16121EC61DAB00EAFB58 /* Main.storyboard in Resources */,
+				FA3AD9DF1EC62803009E80B7 /* zte_axon7_grey_57.jpg in Resources */,
+				FA3AD9D71EC62803009E80B7 /* huawei_p10.jpg in Resources */,
+				FA3AD9DB1EC62803009E80B7 /* motorola_sm4377ad1k7.jpg in Resources */,
+				FA3AD9D91EC62803009E80B7 /* lenovo_pa4.jpg in Resources */,
+				FA3AD9D61EC62803009E80B7 /* apple_iphone_7_plus_128gb_silver.jpg in Resources */,
+				FA3AD9DE1EC62803009E80B7 /* sony_xperia_xa_dual_black.jpg in Resources */,
+				FA3AD9DC1EC62803009E80B7 /* nous_ns_5006_rose_gold.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

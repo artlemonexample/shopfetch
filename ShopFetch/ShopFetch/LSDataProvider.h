@@ -7,7 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "LSProductEntity+CoreDataClass.h"
+#import "LSProductEntity+CoreDataProperties.h"
 
 @interface LSDataProvider : NSObject
+
++ (instancetype)sharedInstance;
 
 @end

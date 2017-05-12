@@ -7,8 +7,14 @@
 //
 
 #import "ViewController.h"
+#import <MagicalRecord/MagicalRecord.h>
 
-@interface ViewController ()
+#import "LSDataProvider.h"
+#import "LSProductCell.h"
+
+@interface ViewController () <UITableViewDataSource>
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (strong, nonatomic) NSFetchedResultsController *fetchedController;
 
 @end
 
@@ -16,7 +22,24 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    self.tableView.dataSource = self;
+    [LSDataProvider sharedInstance];
+    if (![self.fetchedController performFetch:nil]){
+        NSLog(@"error");
+    }
+    
+
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    id<NSFetchedResultsSectionInfo> sectionInfo = self.fetchedController.sections[section];
+    return sectionInfo.numberOfObjects;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    LSProductCell *cell = [tableView dequeueReusableCellWithIdentifier:@"product_cell"];
+    [cell updateModel:[LSProduct productFromEntity:[self.fetchedController objectAtIndexPath:indexPath]]];
+    return cell;
 }
 
 
@@ -25,5 +48,27 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (NSFetchedResultsController *)fetchedController {
+    if (!_fetchedController) {
+        NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
+        NSEntityDescription *entity = [NSEntityDescription
+                                       entityForName:@"LSProductEntity" inManagedObjectContext:[NSManagedObjectContext MR_rootSavingContext]];
+        [fetchRequest setEntity:entity];
+        
+        NSSortDescriptor *sort = [[NSSortDescriptor alloc]
+                                  initWithKey:@"name" ascending:NO];
+        [fetchRequest setSortDescriptors:[NSArray arrayWithObject:sort]];
+        
+        [fetchRequest setFetchBatchSize:20];
+        
+        NSFetchedResultsController *theFetchedResultsController =
+        [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest
+                                            managedObjectContext:[NSManagedObjectContext MR_rootSavingContext] sectionNameKeyPath:nil
+                                                       cacheName:@"Root"];
+        _fetchedController = theFetchedResultsController;
+//        _fetchedController.delegate = self;
+    }
+    return _fetchedController;
+}
 
 @end

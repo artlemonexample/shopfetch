@@ -7,6 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "LSProductEntity+CoreDataProperties.h"
+#import "LSProductEntity+CoreDataClass.h"
+
 
 @interface LSProduct : NSObject
 
@@ -14,5 +17,9 @@
 @property (strong, nonatomic) NSString *cost;
 @property (strong, nonatomic) NSString *imageName;
 @property (strong, nonatomic) NSString *productID;
+
+
+- (void)fillEntityFromModel:(LSProductEntity*)entity;
++ (LSProduct*)productFromEntity:(LSProductEntity*)entity;
 
 @end

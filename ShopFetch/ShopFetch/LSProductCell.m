@@ -10,15 +10,10 @@
 
 @implementation LSProductCell
 
-- (void)awakeFromNib {
-    [super awakeFromNib];
-    // Initialization code
-}
-
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
-    [super setSelected:selected animated:animated];
-
-    // Configure the view for the selected state
+- (void)updateModel:(LSProduct*)model {
+    self.nameLabel.text = model.name;
+    self.costLabel.text = model.cost;
+    self.photoImageView.image = [UIImage imageNamed:model.imageName];
 }
 
 @end
